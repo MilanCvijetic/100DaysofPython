@@ -15,6 +15,3 @@ days_left = years_left * 365
 
 print(f"You have roughly {years_left} years to live, which is {weeks_left} weeks or {days_left} days. Use them wisely!")
 
-#print(years_left)
-#print(weeks_left)
-#print(days_left)
