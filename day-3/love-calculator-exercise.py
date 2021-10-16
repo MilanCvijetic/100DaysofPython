@@ -35,12 +35,13 @@ total_love = str(love_name1 + love_name2)
 print(f"Total = {total_love}")
 
 #sums up end result and prints out final love score
-love_score = total_true + total_love #error because strings and integers can't be compared
+love_score = int(total_true + total_love) #added type conversion to integer
 print(f"Love Score = {love_score}")
 
+#prints a message corresponding to result
 if love_score < 10 or love_score > 90:
     print(f"Your score is {love_score}, you go together like coke and mentos")
 elif love_score >= 40 and 50:
     print(f"Your score is {love_score}, you are alright together")
 else:
-    print(f"Your score is {love_score}")
+    print(f"Your score is {love_score}.")
