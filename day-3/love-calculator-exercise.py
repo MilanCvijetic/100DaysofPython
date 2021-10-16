@@ -41,7 +41,7 @@ print(f"Love Score = {love_score}")
 #prints a message corresponding to result
 if love_score < 10 or love_score > 90:
     print(f"Your score is {love_score}, you go together like coke and mentos")
-elif love_score >= 40 and 50:
+elif  40 <= love_score <= 50:
     print(f"Your score is {love_score}, you are alright together")
 else:
     print(f"Your score is {love_score}.")
