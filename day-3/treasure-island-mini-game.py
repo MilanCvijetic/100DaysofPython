@@ -20,7 +20,19 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 /______/______/______/______/______/______/______/______/______/______/_____ /
 *******************************************************************************
 ''')
-print("Welcome to Ljubljana.")
-print("Your mission is to see your friends.") 
+print("Welcome to Ljubljana. There's no treasure her. Only friends. Maybe.")
+print("Your mission is to see your friends. "\
+    "They've gathered in the city center, "\
+    "but the ongoing protests by stupid fucking idiots "\
+    "are blocking your way there. " ) 
+#First crossroads selections
+crossroad1 = input("You're at Kino Siska. Where do you go? ")
+if crossroad1 == "Drenikova":
+    print("Lucky you, the way is free.")
+elif crossroad1 == "Vodnikova" or crossroad1 == "Celovska":
+    print("These don't go toward the city center.")
+else:
+    print("Fuck this bullshit with a rusty blade. You went back to Linz.")
 
-input("You're sitting in your car and texting people, inviting them to hang around with you for a bit. Who do you text first? ")
+crossroad2 = input(" ")
+crossroad3 = input(" ")
