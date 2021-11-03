@@ -20,19 +20,25 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 /______/______/______/______/______/______/______/______/______/______/_____ /
 *******************************************************************************
 ''')
-print("Welcome to Ljubljana. There's no treasure her. Only friends. Maybe.")
-print("Your mission is to see your friends. "\
-    "They've gathered in the city center, "\
-    "but the ongoing protests by stupid fucking idiots "\
-    "are blocking your way there. " ) 
+print("You're on a treasure island.")
+print("Find your treasure!" ) 
 #First crossroads selections
-crossroad1 = input("You're at Kino Siska. Where do you go? ")
-if crossroad1 == "Drenikova":
-    print("Lucky you, the way is free.")
-elif crossroad1 == "Vodnikova" or crossroad1 == "Celovska":
-    print("These don't go toward the city center.")
+crossroad1 = input("You\'re at a crosssroads, where do you want to go? Type 'left' or 'right'\n").lower()
+#TODO add comments
+#TODO modify and add complexity
+if crossroad1 == "left":
+    crossroads2 = input('You\'ve come to a lake. There\'s an island in the middle of the lake. Type "wait" to wait for the boat. Type "swim" to swim across\n').lower()
+    if crossroads2 == "wait":
+        choice3 = input("You arrive at the island unharmed. There is a house with 3 doors. One red, one Yellow and one bblue. Which color do you choose?\n").lower()
+        if choice3 == "red":
+            print("It's a room full of fire! Game over!")
+        elif choice3 == "yellow":
+            print("You found the treasure! You WIN!")
+        elif choice3 == "blue":
+            print("You got eaten. Game over!")
+        else:
+            print("You chose a door that doesn't exist. Game over.")
+    else:
+        print("You got attacked by an angry trout. Game over!")
 else:
-    print("Fuck this bullshit with a rusty blade. You went back to Linz.")
-
-crossroad2 = input(" ")
-crossroad3 = input(" ")
+    print("Game over! You fell into a hole.")
